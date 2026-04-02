@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "FreightNeo Pro", sans-serif;
+
+  --color-bg-header: #3d3935;
+  --color-logo-header: #c6c1c1;
+  --color-text-header: #cfcaca;
+
+  --color-text-light: #fff9f4;
+  --color-text-dark: #22211f;
+
+  --color-bg-dark: #22211f;
+  --color-bg-light: #fff9f4;
+
+  --color-details: #bd8457;
+
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-[var(--color-bg-light)] text-[var(--color-text-dark)] antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-semibold;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+}
