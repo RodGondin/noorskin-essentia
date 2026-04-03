@@ -1,7 +1,11 @@
+import { Header } from "@/components/Header";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Starting project!</h1>
+    <div className="flex min-h-screen flex-col">
+      <main className="flex-1">
+        <Header />
+      </main>
     </div>
   );
 }
