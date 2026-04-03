@@ -2,6 +2,7 @@
 
 :root {
   --font-sans: "Inter", sans-serif;
+  --font-display: "Prata", "Inter", sans-serif;
 
   --color-bg-header: #3d3935;
   --color-text-header: #cfcaca;
@@ -35,7 +36,8 @@
   h2,
   h3,
   h4 {
-    @apply font-semibold;
+    font-family: var(--font-display), var(--font-sans), sans-serif;
+    @apply font-normal;
   }
 
   img {

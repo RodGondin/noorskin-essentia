@@ -58,7 +58,7 @@ export function Header() {
 
           {/* MENU DESKTOP */}
           <nav className="hidden items-center text-[18px] min-[1033px]:flex">
-            <ul className="flex items-center gap-[6px]">
+            <ul className="flex items-center gap-1.5">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <a
