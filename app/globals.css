@@ -13,7 +13,8 @@
   --color-bg-dark: #22211f;
   --color-bg-light: #fff9f4;
 
-  --color-details: #bd8457;
+  --color-details: #975d38;
+  --color-details-light: #bd8457;
 
   --radius: 0.5rem;
 }
@@ -42,5 +43,24 @@
 
   img {
     @apply max-w-full h-auto;
+  }
+}
+
+@layer utilities {
+  .focus-ring-header {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-text-light)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-header)];
+  }
+
+  .focus-ring-dark-button {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-bg-dark)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg-light)];
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
 }

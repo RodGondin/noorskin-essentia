@@ -22,7 +22,7 @@ export function Header() {
           {/* BOTÃO MOBILE */}
           <button
             type="button"
-            className="absolute left-5 top-1/2 -translate-y-1/2 cursor-pointer text-xl min-[1033px]:hidden"
+            className="focus-ring-header absolute left-5 top-1/2 -translate-y-1/2 cursor-pointer rounded-sm text-xl min-[1033px]:hidden"
             onClick={() => setOpen(!open)}
             aria-label={open ? "Fechar menu" : "Abrir menu"}
             aria-expanded={open}
@@ -31,6 +31,7 @@ export function Header() {
             <span className="relative block h-[27px] w-[27px]">
               <Menu
                 size={27}
+                aria-hidden="true"
                 className={`absolute inset-0 transition-all duration-300 ${
                   open
                     ? "rotate-90 scale-75 opacity-0"
@@ -39,6 +40,7 @@ export function Header() {
               />
               <PanelTopClose
                 size={27}
+                aria-hidden="true"
                 className={`absolute inset-0 transition-all duration-300 ${
                   open
                     ? "rotate-0 scale-100 opacity-100"
@@ -57,13 +59,16 @@ export function Header() {
           />
 
           {/* MENU DESKTOP */}
-          <nav className="hidden items-center text-[18px] min-[1033px]:flex">
+          <nav
+            aria-label="Navegação principal"
+            className="hidden items-center text-[18px] min-[1033px]:flex"
+          >
             <ul className="flex items-center gap-1.5">
               {navItems.map((item) => (
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="block whitespace-nowrap px-4 py-4 transition hover:text-white"
+                    className="focus-ring-header block whitespace-nowrap rounded-sm px-4 py-4 transition hover:text-white"
                   >
                     {item.label}
                   </a>
@@ -77,6 +82,7 @@ export function Header() {
         {open && (
           <nav
             id={mobileMenuId}
+            aria-label="Navegação principal"
             className="absolute inset-x-0 top-full z-10 min-[1033px]:hidden"
           >
             <ul className="flex flex-col gap-4 bg-[var(--color-bg-header)] px-5 py-4">
@@ -84,7 +90,7 @@ export function Header() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="block transition hover:text-white"
+                    className="focus-ring-header block rounded-sm transition hover:text-white"
                     onClick={() => setOpen(false)}
                   >
                     {item.label}
