@@ -4,12 +4,12 @@ export function Hero() {
   return (
     <section className="w-full bg-[var(--color-bg-dark)]">
       <div className="flex flex-col md:min-h-155 md:grid md:grid-cols-2 xl:min-h-190">
-        <div className="bg-[var(--color-bg-dark)] px-5 md:py-14.5 text-white md:flex md:items-end md:px-[clamp(48px,10vw,280px)] md:pb-[clamp(40px,9vw,64px)] min-[1800px]:pl-[280px]">
-          <div className="md:w-full md:max-w-92.5 lg:max-w-102.5">
-            <h1 className="py-8 text-5xl leading-12.5 font-normal md:text-[64px] md:leading-[1.05]">
+        <div className="bg-[var(--color-bg-dark)] px-5 text-white md:py-14.5 md:flex md:items-end md:px-[clamp(48px,10vw,280px)] md:pb-[clamp(40px,9vw,64px)] min-[1800px]:pl-[280px]">
+          <div className="min-w-0 md:w-full md:max-w-92.5 lg:max-w-102.5">
+            <h1 className="py-8 text-[clamp(2.75rem,19vw,3rem)] leading-[0.95] font-normal min-[365px]:text-5xl min-[365px]:leading-12.5 md:text-[64px] md:leading-[1.05]">
               Renasça com nutrição
             </h1>
-            <p className="pb-10 md:pb-0 text-2xl leading-6.5 md:text-[18px] md:leading-[1.15]">
+            <p className="pb-10 text-[clamp(1rem,8vw,2rem)] leading-[1.1] min-[365px]:text-2xl min-[365px]:leading-6.5 md:pb-0 md:text-[18px] md:leading-[1.15]">
               Renaissance resgata a integridade da queratina, reconstruindo a
               arquitetura de fios e unhas contra os desgastes do cotidiano. Uma
               nutrição essencial que cura a fibra profundamente, devolvendo a

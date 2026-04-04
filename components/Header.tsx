@@ -56,6 +56,7 @@ export function Header() {
             width={124}
             height={24}
             priority
+            className="h-auto w-[clamp(96px,44vw,124px)] min-[240px]:w-[124px]"
           />
 
           {/* MENU DESKTOP */}

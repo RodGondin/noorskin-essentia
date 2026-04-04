@@ -27,10 +27,12 @@
   html {
     font-family: var(--font-sans);
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply bg-[var(--color-bg-light)] text-[var(--color-text-dark)] antialiased;
+    overflow-x: hidden;
   }
 
   h1,

@@ -54,7 +54,7 @@ export function Products() {
               id="nossa-essencia"
               className="max-w-[420px] min-[1420px]:w-[420px]"
             >
-              <h2 className="text-[48px] leading-[1.2] text-[var(--color-text-dark)] min-[1420px]:text-[64px]">
+              <h2 className="text-[clamp(1.75rem,12vw,2.625rem)] leading-[1.15] text-[var(--color-text-dark)] min-[375px]:text-[48px] min-[375px]:leading-[1.2] min-[1420px]:text-[64px]">
                 Living in
                 <br />
                 Consciousness
