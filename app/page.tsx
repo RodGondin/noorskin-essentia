@@ -1,3 +1,4 @@
+import { Banner } from "@/components/Banner";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Nutrition } from "@/components/Nutrition";
@@ -9,8 +10,17 @@ export default function Home() {
       <main className="flex-1">
         <Header />
         <Hero />
-        <Products />
-        <Nutrition />
+        <div className="flex flex-col">
+          <div className="order-1">
+            <Products />
+          </div>
+          <div className="order-2 min-[1420px]:order-3">
+            <Banner />
+          </div>
+          <div className="order-3 min-[1420px]:order-2">
+            <Nutrition />
+          </div>
+        </div>
       </main>
     </div>
   );

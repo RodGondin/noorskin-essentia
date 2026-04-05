@@ -22,7 +22,7 @@ export function ProductCard({
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-contain transition-transform duration-300 group-hover:scale-105"
+          className="object-contain transition-transform duration-300 group-hover:scale-130"
           sizes="(min-width: 1000px) 273px, 271px"
         />
       </div>
