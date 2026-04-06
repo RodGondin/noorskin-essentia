@@ -134,8 +134,8 @@ export function Nutrition() {
       id="informacao-nutricional"
       className="w-full overflow-x-hidden bg-[var(--color-bg-dark)] py-[120px] text-[var(--color-text-light)]"
     >
-      <div className="w-full px-5 min-[1800px]:px-[280px]">
-        <div className="mx-auto w-full max-w-[1360px] min-[1800px]:mx-0 min-[1800px]:max-w-none">
+      <div className="w-full px-[var(--page-gutter)]">
+        <div className="mx-auto w-full max-w-[1360px]">
           <div className="flex justify-end">
             <div className="w-full min-w-0 max-w-[640px]">
               <h2 className="max-w-full text-[clamp(2rem,16vw,3rem)] leading-[1.05] min-[1420px]:text-[64px]">

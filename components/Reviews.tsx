@@ -126,8 +126,8 @@ export function Reviews() {
       id="depoimentos"
       className="w-full overflow-x-hidden bg-[var(--color-bg-light)] pt-[120px] pb-[40px]"
     >
-      <div className="w-full px-5 min-[1800px]:px-[280px]">
-        <div className="mx-auto w-full max-w-[1360px] min-[1800px]:mx-0 min-[1800px]:max-w-none">
+      <div className="w-full px-[var(--page-gutter)]">
+        <div className="mx-auto w-full max-w-[1360px]">
           <div className="flex flex-wrap items-end gap-x-4 gap-y-2 min-[1420px]:gap-x-5">
             <h2 className="text-[48px] leading-[1.05] text-[var(--color-text-dark)] min-[1420px]:text-[64px]">
               Avaliações

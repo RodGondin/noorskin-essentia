@@ -22,16 +22,16 @@ export function ProductCard({
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-contain transition-transform duration-300 group-hover:scale-130"
+          className="scale-110 object-contain transition-transform duration-300 group-hover:scale-130"
           sizes="(min-width: 1000px) 273px, 271px"
         />
       </div>
 
       <div className="mt-auto flex w-full flex-col items-center px-[25.67px] min-[1000px]:px-[26.67px]">
-        <h3 className="max-w-full whitespace-pre-line text-[18px] leading-[1.15] text-[var(--color-text-dark)] [font-family:var(--font-sans)]">
+        <h3 className="max-w-full whitespace-pre-line text-[16px] leading-[1.15] text-[var(--color-text-dark)] [font-family:var(--font-sans)]">
           {name}
         </h3>
-        <p className="mt-3 text-[18px] leading-none text-[var(--color-text-dark)] underline underline-offset-4 [font-family:var(--font-sans)]">
+        <p className="mt-[10px] text-[18px] leading-none text-[var(--color-text-dark)] underline underline-offset-4 [font-family:var(--font-sans)]">
           {price}
         </p>
         <button

@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section className="w-full bg-[var(--color-bg-dark)]">
       <div className="flex flex-col md:min-h-155 md:grid md:grid-cols-2 xl:min-h-190">
-        <div className="bg-[var(--color-bg-dark)] px-5 text-white md:py-14.5 md:flex md:items-end md:px-[clamp(48px,10vw,280px)] md:pb-[clamp(40px,9vw,64px)] min-[1800px]:pl-[280px]">
+        <div className="bg-[var(--color-bg-dark)] px-[var(--page-gutter)] text-white md:py-14.5 md:flex md:items-end md:pr-[clamp(32px,5vw,120px)] md:pb-[clamp(40px,9vw,64px)]">
           <div className="min-w-0 md:w-full md:max-w-92.5 lg:max-w-102.5">
             <h1 className="py-8 text-[clamp(2.75rem,19vw,3rem)] leading-[0.95] font-normal min-[365px]:text-5xl min-[365px]:leading-12.5 md:text-[64px] md:leading-[1.05]">
               Renasça com nutrição

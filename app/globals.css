@@ -3,6 +3,7 @@
 :root {
   --font-sans: "Inter", sans-serif;
   --font-display: "Prata", "Inter", sans-serif;
+  --page-gutter: clamp(20px, calc((100vw - 1360px) / 2), 280px);
 
   --color-bg-header: #3d3935;
   --color-text-header: #cfcaca;

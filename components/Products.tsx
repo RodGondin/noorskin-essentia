@@ -30,10 +30,10 @@ export function Products() {
       id="produtos"
       className="w-full overflow-x-hidden bg-[var(--color-bg-light)] pt-16 pb-[120px] min-[1420px]:pt-[120px]"
     >
-      <div className="w-full max-w-full px-5 min-[1800px]:px-[280px]">
-        <div className="mx-auto w-full max-w-[1360px] min-[1800px]:mx-0 min-[1800px]:max-w-none">
+      <div className="w-full max-w-full px-[var(--page-gutter)]">
+        <div className="mx-auto w-full max-w-[1360px]">
           <div className="min-w-0 flex flex-col gap-10 min-[1420px]:grid min-[1420px]:grid-cols-[819px_420px] min-[1420px]:items-center min-[1420px]:gap-[40px]">
-            <ul className="flex max-w-full snap-x snap-mandatory overflow-x-auto pt-1 scroll-smooth no-scrollbar min-[1420px]:mx-0 min-[1420px]:grid min-[1420px]:w-[819px] min-[1420px]:grid-cols-[repeat(3,273px)] min-[1420px]:overflow-visible">
+            <ul className="flex max-w-full snap-x snap-mandatory overflow-x-auto pt-1 scroll-smooth no-scrollbar min-[853px]:justify-center min-[1420px]:mx-0 min-[1420px]:grid min-[1420px]:w-[819px] min-[1420px]:grid-cols-[repeat(3,273px)] min-[1420px]:justify-start min-[1420px]:overflow-visible">
               {products.map((product, index) => (
                 <li
                   key={`${product.name}-${index}`}

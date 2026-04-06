@@ -17,7 +17,7 @@ export function Header() {
 
   return (
     <header className="w-full bg-[var(--color-bg-header)] text-[var(--color-text-header)]">
-      <div className="relative h-15 w-full px-5 min-[1000px]:px-[280px]">
+      <div className="relative h-15 w-full px-[var(--page-gutter)]">
         <div className="flex h-full items-center justify-center min-[1033px]:justify-start min-[1033px]:gap-[40px]">
           {/* BOTÃO MOBILE */}
           <button
